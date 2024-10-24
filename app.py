@@ -179,6 +179,11 @@ def stock_visualization():
 def stock_rec():
     return render_template("stock_rec.html")
 
+@app.route("/rescources")
+@login_required
+def rescourses():
+    return render_template("rescources.html")
+
 
 @app.route("/home")
 @login_required
